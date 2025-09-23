@@ -29,27 +29,22 @@ import people12 from "../../assets/people12.webp";
 import people13 from "../../assets/people13.webp";
 import people14 from "../../assets/people14.webp";
 import people15 from "../../assets/people15.webp";
-import event1 from "../../assets/event1.webp";
-import event2 from "../../assets/event2.webp";
-import event3 from "../../assets/event3.webp";
-import event4 from "../../assets/event4.webp";
-import event5 from "../../assets/event5.webp";
-import event6 from "../../assets/event6.webp";
-import event7 from "../../assets/event7.webp";
-import event8 from "../../assets/event8.webp";
-import event9 from "../../assets/event9.webp";
-import event10 from "../../assets/event10.webp";
-import event11 from "../../assets/event11.webp";
-import event12 from "../../assets/event12.webp";
-import event13 from "../../assets/event13.webp";
-import event14 from "../../assets/event14.webp";
-import event15 from "../../assets/event15.webp";
-import event16 from "../../assets/event16.webp";
-import event17 from "../../assets/event17.webp";
-import event18 from "../../assets/event18.webp";
-import event19 from "../../assets/event19.webp";
-import event20 from "../../assets/event20.webp";
-import event21 from "../../assets/event21.webp";
+import event22 from "../../assets/event22.webp";
+import event23 from "../../assets/event23.webp";
+import event24 from "../../assets/event24.webp";
+import event25 from "../../assets/event25.webp";
+import event26 from "../../assets/event26.webp";
+import event27 from "../../assets/event27.webp";
+import event28 from "../../assets/event28.webp";
+import classic1 from "../../assets/classic1.webp"
+import classic2 from "../../assets/classic2.webp"
+import classic3 from "../../assets/classic3.webp"
+import classic4 from "../../assets/classic4.webp"
+import classic5 from "../../assets/classic5.webp"
+import classic6 from "../../assets/classic6.webp"
+import classic7 from "../../assets/classic7.webp"
+import classic8 from "../../assets/classic8.webp"
+
 
 export default function Work({
   categories = [
@@ -97,36 +92,27 @@ export default function Work({
       id: "events",
       title: "Events",
       images: [
-        event1,
-        event2,
-        event3,
-        event4,
-        event5,
-        event6,
-        event7,
-        event8,
-        event9,
-        event10,
-        event11,
-        event12,
-        event13,
-        event14,
-        event15,
-        event16,
-        event17,
-        event18,
-        event19,
-        event20,
-        event21,
+       event22,
+       event23,
+       event24,
+       event25,
+       event26,
+       event27,
+       event28
       ],
     },
     {
-      id: "nature",
-      title: "Nature",
+      id: "Classical",
+      title: "Classical",
       images: [
-        "https://picsum.photos/600/800?random=10",
-        "https://picsum.photos/600/800?random=11",
-        "https://picsum.photos/600/800?random=12",
+        classic1,
+        classic2,
+        classic3,
+        classic4,
+        classic5,
+        classic6,
+        classic7,
+        classic8
       ],
     },
   ],

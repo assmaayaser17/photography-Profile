@@ -41,6 +41,12 @@ import event18 from "../../assets/event18.webp";
 import event19 from "../../assets/event19.webp";
 import event20 from "../../assets/event20.webp";
 import event21 from "../../assets/event21.webp";
+import event29 from "../../assets/event29.webp";
+import event30 from "../../assets/event30.webp";
+import event31 from "../../assets/event31.webp";
+import event32 from "../../assets/event32.webp";
+import event33 from "../../assets/event33.webp";
+import event34 from "../../assets/event34.webp";
 
 const Portofolio = () => {
   const [selectedGallery, setSelectedGallery] = useState(null);
@@ -68,9 +74,9 @@ const Portofolio = () => {
       gallery: [portofolio1, gallary1, gallary2, gallary3, gallary4, gallary5, gallary6, gallary7, gallary8, gallary9],
     },
     {
-      title: "Another Portrait",
+      title: "Event",
       img: portofolio2,
-      gallery: [portofolio2, event8, event1, event2, event3, event4, event5, event6, event7],
+      gallery: [portofolio2, event29,event30,event31,event32,event33,event34],
     },
     {
       title: "Event",
@@ -97,7 +103,7 @@ const Portofolio = () => {
               key={i}
               src={item.img}
               alt={item.title}
-              className="w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="w-full object-contain rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => setSelectedGallery(i)}
               loading="lazy"
             />
