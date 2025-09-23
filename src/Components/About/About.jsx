@@ -4,7 +4,7 @@ import profile from "../../assets/profile.webp";
 import hockey from "../../assets/hockey.webp";
 import { useState } from "react";
 import PhotoScroll from "../Photo-Scrol";
-import AnimateSection from "../Animation-Section";
+
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -15,7 +15,7 @@ export default function About() {
   const [showGallery, setShowGallery] = useState(false);
   return (
     <>
-      <AnimateSection
+      <div
         className="bg-white text-black px-6 py-20 md:px-20"
         style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
       >
@@ -125,7 +125,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </AnimateSection>
+      </div>
     </>
   );
 }

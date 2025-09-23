@@ -1,30 +1,36 @@
-// components/AnimateSection.jsx
-import { motion, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+// components/StickyReveal.jsx
+import { motion, useAnimation } from "framer-motion"
+import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
 
-export default function AnimateSection({ children, className = '' }) {
+export default function StickyReveal({ children, className = "" }) {
   const controls = useAnimation()
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 })
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  })
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible')
-       } else {
-      controls.start('hidden');
+      controls.start("visible")
+    } else {
+      controls.start("hidden")
     }
-    
   }, [inView, controls])
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: {
+      opacity: 0,
+      y: 40,
+      scale: 0.98,
+    },
     visible: {
       opacity: 1,
       y: 0,
+      scale: 1,
       transition: {
         duration: 0.8,
-        ease: 'easeOut',
-        staggerChildren: 0.2,
+        ease: "easeOut",
       },
     },
   }

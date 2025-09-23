@@ -36,8 +36,11 @@ export default function Navbar() {
             <a className="text-md hover:text-gray-300" href="tel:+31684399384">
               0031684399384
             </a>
+          
             <a
-              href="mailto:ismailbakass9@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&to=ismailbakass9@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm hover:text-gray-300"
             >
               ismailbakass9@gmail.com

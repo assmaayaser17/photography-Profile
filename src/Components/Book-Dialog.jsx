@@ -1,67 +1,24 @@
-// "use client"
-
-// import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/Components/ui/dialog"
-// import { Input } from "@/Components/ui/input"
-// import { Label } from "@/Components/ui/label"
-// import { Button } from "@/Components/ui/button"
-// import { useForm } from "react-hook-form"
-
-// export default function BookSessionDialog({ open, setOpen }) {
-//   const { register, handleSubmit, reset } = useForm()
-
-//   const onSubmit = (data) => {
-//     console.log("Form Data:", data)
-//     // هنا تقدر تعملي إرسال للإيميل عن طريق:
-//     // - EmailJS
-//     // - أو backend API (Laravel / Node)
-//     reset()
-//     setOpen(false)
-//   }
-
-//   return (
-//     <Dialog open={open} onOpenChange={setOpen}>
-//       <DialogContent className="sm:max-w-md">
-//         <DialogHeader>
-//           <DialogTitle>Book a Session</DialogTitle>
-//         </DialogHeader>
-
-//         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-//           <div>
-//             <Label>Name</Label>
-//             <Input {...register("name", { required: true })} placeholder="Your Name" />
-//           </div>
-//           <div>
-//             <Label>Email</Label>
-//             <Input {...register("email", { required: true })} type="email" placeholder="Your Email" />
-//           </div>
-//           <div>
-//             <Label>Message</Label>
-//             <Input {...register("message")} placeholder="Tell me about your session..." />
-//           </div>
-
-//           <Button type="submit" className="w-full">Send</Button>
-//         </form>
-//       </DialogContent>
-//     </Dialog>
-//   )
-// }
-"use client"
-
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/Components/ui/dialog"
-import { Input } from "@/Components/ui/input"
-import { Label } from "@/Components/ui/label"
-import { Button } from "@/Components/ui/button"
-import { useForm } from "react-hook-form"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/Components/ui/dialog";
+import { Input } from "@/Components/ui/input";
+import { Label } from "@/Components/ui/label";
+import { Button } from "@/Components/ui/button";
+import { useForm } from "react-hook-form";
+import { Textarea } from "@/Components/ui/textarea";
 
 export default function BookSessionDialog({ open, setOpen }) {
-  const { register, handleSubmit, reset } = useForm()
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    console.log("Form Data:", data)
+    console.log("Form Data:", data);
     // Send email logic here (EmailJS or backend API)
-    reset()
-    setOpen(false)
-  }
+    reset();
+    setOpen(false);
+  };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -94,10 +51,10 @@ export default function BookSessionDialog({ open, setOpen }) {
 
           <div className="flex flex-col">
             <Label className="text-white font-semibold mb-1">Message</Label>
-            <Input
+            <Textarea
               {...register("message")}
               placeholder="Tell me about your session..."
-              className="rounded-lg border-2 border-white/40 bg-white/20 placeholder-white/80 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition"
+              className="min-h-[120px] rounded-lg border-2 border-white/40 bg-white/20 placeholder-white/80 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition"
             />
           </div>
 
@@ -110,5 +67,5 @@ export default function BookSessionDialog({ open, setOpen }) {
         </form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

@@ -3,20 +3,14 @@ import AnimatedContent from "../AnimatedContent";
 import portofolio1 from "../../assets/portofolio1.webp";
 import portofolio2 from "../../assets/portofolio2.webp";
 import hockey from "../../assets/hockey.webp";
-import sport1 from "../../assets/sports1.webp";
-import sport2 from "../../assets/sports2.webp";
-import sport3 from "../../assets/sports3.webp";
-import sport4 from "../../assets/sports4.webp";
-import sport5 from "../../assets/sports5.webp";
-import sport6 from "../../assets/sports6.webp";
-import sport7 from "../../assets/sports7.webp";
-import sport8 from "../../assets/sports8.webp";
-import sport9 from "../../assets/sports9.webp";
-import sport10 from "../../assets/sports10.webp";
-import sport11 from "../../assets/sports11.webp";
-import sport12 from "../../assets/sports12.webp";
-import sport13 from "../../assets/sports13.webp";
-import sport14 from "../../assets/sports14.webp";
+import hockey2 from "../../assets/hockey2.webp"
+import hockey3 from "../../assets/hockey3.webp"
+import hockey4 from "../../assets/hockey4.webp"
+import hockey5 from "../../assets/hockey5.webp"
+import hockey6 from "../../assets/hockey6.webp"
+import hockey7 from "../../assets/hockey7.webp"
+import hockey8 from "../../assets/hockey8.webp"
+import hockey9 from "../../assets/hockey9.webp";
 import gallary1 from "../../assets/gallary1.webp";
 import gallary2 from "../../assets/gallary2.webp";
 import gallary3 from "../../assets/gallary3.webp";
@@ -57,20 +51,15 @@ const Portofolio = () => {
       img: hockey,
       gallery: [
         hockey,
-        sport1,
-        sport2,
-        sport3,
-        sport4,
-        sport5,
-        sport6,
-        sport7,
-        sport8,
-        sport9,
-        sport10,
-        sport11,
-        sport12,
-        sport13,
-        sport14,
+        hockey2,
+        hockey3,
+        hockey4,
+        hockey5,
+        hockey6,
+        hockey7,
+        hockey8,
+        hockey9
+       
       ],
     },
     {
