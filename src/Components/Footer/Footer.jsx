@@ -1,5 +1,4 @@
-// Footer.jsx
-import Threads from "../Threads"; // ✅ استيراد Threads بدلاً من Galaxy
+import Threads from "../Threads";
 
 const Footer = () => {
   return (

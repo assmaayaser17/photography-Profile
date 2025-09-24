@@ -5,10 +5,12 @@ import profile from "../../assets/profile.webp";
 import hockey2 from "../../assets/hockey2.webp";
 import sport2 from "../../assets/sports2.webp";
 import sport9 from "../../assets/sports9.webp";
+import { motion } from "framer-motion";
+
 
 export default function ChooseMe() {
   return (
-    <div className="container mx-auto px-5 p-5">
+    <div id="CHOOSE" className="container mx-auto px-5 p-5">
       {/* العنوان والوصف */}
       <div className="text-center flex flex-col gap-8 mt-20">
         <h2 className="text-gray-700 text-4xl md:text-6xl font-bold leading-tight">
@@ -63,11 +65,30 @@ export default function ChooseMe() {
         </div>
 
         <div className="flex flex-col gap-4 w-full lg:w-1/3">
-          <img
+          {/* <img
             src={hockey2}
             alt="side-1"
             className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
-          />
+          /> */}
+
+          <motion.img
+  src={hockey2}
+  alt="side-1"
+  className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
+  whileHover={{
+    scale: [null, 1.1, 1.6],
+    transition: {
+      duration: 0.5,
+      times: [0, 0.6, 1],
+      ease: ["easeInOut", "easeOut"],
+    },
+  }}
+  transition={{
+    duration: 0.3,
+    ease: "easeOut",
+  }}
+/>
+
           <img
             src={sport2}
             alt="side-2"

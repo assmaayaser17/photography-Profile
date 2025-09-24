@@ -3,7 +3,7 @@ import girls from "../../assets/girls.webp";
 import profile from "../../assets/profile.webp";
 import hockey from "../../assets/hockey.webp";
 import { useState } from "react";
-import PhotoScroll from "../Photo-Scrol";
+
 
 
 const itemVariants = {
@@ -16,6 +16,7 @@ export default function About() {
   return (
     <>
       <div
+      id="ABOUT"
         className="bg-white text-black px-6 py-20 md:px-20"
         style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
       >
@@ -101,26 +102,13 @@ export default function About() {
                 </div>
               </div>
               <div className="mt-44">
-                <button
+                <a href="#PORTOFOLIO"
                   className="text-3xl underline"
-                  onClick={() => setShowGallery(true)}
                 >
                   {" "}
                   Check out my work ↗
-                </button>
+                </a>
 
-                {showGallery && (
-                  <div className="fixed inset-0 z-50 bg-black text-white overflow-y-auto">
-                    <button
-                      onClick={() => setShowGallery(false)}
-                      className="absolute top-5 right-5 text-4xl z-50 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-300"
-                    >
-                      ✕
-                    </button>
-
-                    <PhotoScroll />
-                  </div>
-                )}
               </div>
             </div>
           </div>

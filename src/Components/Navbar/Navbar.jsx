@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full bg-transparent text-white z-50 px-6 py-4 flex  "
+      className="fixed top-0 left-0 w-full bg-transparent text-white z-50 px-6 py-4 flex"
       style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
     >
       <div className="flex justify-between w-full mx-auto px-6">
@@ -36,7 +36,7 @@ export default function Navbar() {
             <a className="text-md hover:text-gray-300" href="tel:+31684399384">
               0031684399384
             </a>
-          
+
             <a
               href="https://mail.google.com/mail/?view=cm&to=ismailbakass9@gmail.com"
               target="_blank"
@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Instagram */}
           <div>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/livwsi?igsh=bHlud3duamVvcnVk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-md hover:text-gray-300"
@@ -87,55 +87,53 @@ export default function Navbar() {
               <X size={32} />
             </button>
 
-            {/* Links + صور */}
-            <div className="flex gap-9">
-              <div className="grid grid-cols-2 gap-4 mt-12">
-                <motion.img
-                  src={piano}
-                  alt="piano"
-                  className="rounded-lg w-80 h-80 object-cover"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                />
-                <motion.img
-                  src={group}
-                  alt="group"
-                  className="rounded-lg w-80 h-80 object-cover"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                />
-              </div>
-
+            <div className="grid grid-cols-2 gap-4 mt-12">
+              <motion.img
+                src={piano}
+                alt="piano"
+                className="rounded-lg max-w-full aspect-square object-cover sm:w-80 sm:h-80"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+              <motion.img
+                src={group}
+                alt="group"
+                className="rounded-lg max-w-full aspect-square object-cover sm:w-80 sm:h-80"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              />
               <div className="flex flex-col items-center space-y-8 mt-12">
-                <a href="#home" className="text-2xl hover:text-gray-300">
+                <a
+                  href="#Home"
+                  className="text-2xl hover:text-gray-300 block md:hidden"
+                >
                   Home
                 </a>
-                <a href="#about" className="text-2xl hover:text-gray-300">
+                <a
+                  href="#ABOUT"
+                  className="text-2xl hover:text-gray-300 block md:hidden"
+                >
                   About
                 </a>
-                <a href="#contact" className="text-2xl hover:text-gray-300">
-                  Contact
+                <a
+                  href="#WORK"
+                  className="text-2xl hover:text-gray-300 block md:hidden"
+                >
+                  Work
                 </a>
                 <a
-                  href="mailto:ismailbakass9@gmail.com"
-                  className="text-2xl hover:text-gray-300"
+                  href="PORTOFOLIO"
+                  className="text-2xl hover:text-gray-300  md:hidden"
                 >
-                  Email
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  className="text-2xl hover:text-gray-300"
-                >
-                  Instagram
+                  Portofolio
                 </a>
               </div>
             </div>
 
-            {/* Photographer name at bottom-right */}
-            <div className="absolute bottom-20 left-6 text-6xl font-medium text-white">
+            {/* Photographer name at bottom-right (Desktop only) */}
+            <div className="hidden md:block absolute bottom-20 left-6 text-6xl font-medium text-white">
               Ismail Bakass — Photographer
             </div>
           </motion.div>

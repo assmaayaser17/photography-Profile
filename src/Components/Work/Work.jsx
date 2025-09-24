@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import StickyReveal from "../Animation-Section";
 import backgroundImage from "../../assets/background.webp";
 import sport1 from "../../assets/sports1.webp";
 import sport2 from "../../assets/sports2.webp";
@@ -120,7 +121,8 @@ export default function Work({
   const [openCategory, setOpenCategory] = useState(null);
 
   return (
-    <section className="relative w-full min-h-[70vh] lg:min-h-[80vh] overflow-hidden"
+    
+    <section id="WORK" className="relative w-full min-h-[70vh] lg:min-h-[80vh] overflow-hidden"
      style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
     >
       <div
@@ -230,5 +232,7 @@ export default function Work({
         )}
       </AnimatePresence>
     </section>
+ 
+    
   );
 }

@@ -4,67 +4,52 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/Components/ui/dialog";
-import { Input } from "@/Components/ui/input";
-import { Label } from "@/Components/ui/label";
-import { Button } from "@/Components/ui/button";
-import { useForm } from "react-hook-form";
-import { Textarea } from "@/Components/ui/textarea";
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
-export default function BookSessionDialog({ open, setOpen }) {
-  const { register, handleSubmit, reset } = useForm();
-
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    // Send email logic here (EmailJS or backend API)
-    reset();
-    setOpen(false);
-  };
-
+export default function ContactCardDialog({ open, setOpen }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className="sm:max-w-md bg-white rounded-2xl shadow-xl border border-white/30">
         <DialogHeader>
-          <DialogTitle className="text-gray-600 text-3xl font-extrabold mb-6 tracking-wide drop-shadow-lg">
-            Book a Session
+          <DialogTitle className="text-gray-500 text-3xl font-extrabold mb-4 tracking-wide drop-shadow-lg text-center">
+            Let’s Connect
           </DialogTitle>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 px-6 pb-6">
-          <div className="flex flex-col">
-            {/* <Label className=" font-semibold mb-1">Name</Label> */}
-            <Input
-              {...register("name", { required: true })}
-              placeholder="Your Name"
-              className="rounded-lg border-2 border-white/40 bg-white/20 placeholder-white/80 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <Label className="text-white font-semibold mb-1">Email</Label>
-            <Input
-              {...register("email", { required: true })}
-              type="email"
-              placeholder="Your Email"
-              className="rounded-lg border-2 border-white/40 bg-white/20 placeholder-white/80 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition"
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <Label className="text-white font-semibold mb-1">Message</Label>
-            <Textarea
-              {...register("message")}
-              placeholder="Tell me about your session..."
-              className="min-h-[120px] rounded-lg border-2 border-white/40 bg-white/20 placeholder-white/80 text-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition"
-            />
-          </div>
-
-          <Button
-            type="submit"
-            className="w-full bg-gray-400  text-white font-bold rounded-xl shadow-lg hover:scale-105 hover:brightness-110 transition-transform duration-300"
+        <div className="flex flex-col gap-6 px-6 pb-6 text-center">
+          {/* Email */}
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ismailbakass9@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 text-amber-500 hover:text-amber-400 transition"
           >
-            Send
-          </Button>
-        </form>
+            <FaEnvelope className="text-2xl" />
+            <span className="text-lg font-medium">ismailbakass9@gmail.com</span>
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/31684399384"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 text-green-500 hover:text-green-400 transition"
+          >
+            <FaWhatsapp className="text-2xl" />
+            <span className="text-lg font-medium">+31 6 84399384</span>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/livwsi?igsh=bHlud3duamVvcnVk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 text-pink-600 hover:text-pink-500 transition"
+          >
+            <FaInstagram className="text-2xl" />
+            <span className="text-lg font-medium">@livwsi</span>
+          </a>
+        </div>
       </DialogContent>
     </Dialog>
   );
