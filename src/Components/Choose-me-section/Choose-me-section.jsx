@@ -7,16 +7,19 @@ import sport2 from "../../assets/sports2.webp";
 import sport9 from "../../assets/sports9.webp";
 import { motion } from "framer-motion";
 
-
 export default function ChooseMe() {
   return (
-    <div id="CHOOSE" className="container mx-auto px-5 p-5">
+    <div
+      id="CHOOSE"
+      className="container mx-auto px-5 p-5"
+      style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
+    >
       {/* العنوان والوصف */}
       <div className="text-center flex flex-col gap-8 mt-20">
-        <h2 className="text-gray-700 text-4xl md:text-6xl font-bold leading-tight">
+        <h2 className="text-gray-700 text-[56px] font-bold leading-tight">
           Why choose me as your <br /> Photographer?
         </h2>
-        <p className="text-lg md:text-2xl font-medium text-gray-500">
+        <p className="text-[20px] font-medium text-gray-500">
           From expert guidance to a stress-free experience, I’m here to capture
           <br className="hidden md:block" />
           your most memorable moments with quality and care.
@@ -71,23 +74,12 @@ export default function ChooseMe() {
             className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
           /> */}
 
-          <motion.img
-  src={hockey2}
-  alt="side-1"
-  className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
-  whileHover={{
-    scale: [null, 1.1, 1.6],
-    transition: {
-      duration: 0.5,
-      times: [0, 0.6, 1],
-      ease: ["easeInOut", "easeOut"],
-    },
-  }}
-  transition={{
-    duration: 0.3,
-    ease: "easeOut",
-  }}
-/>
+          <img
+            src={hockey2}
+            alt="side-1"
+            className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
+            
+          />
 
           <img
             src={sport2}
@@ -97,17 +89,6 @@ export default function ChooseMe() {
         </div>
 
         <div className="flex flex-col gap-6 w-full lg:w-1/3">
-          {/* <div className="grid grid-cols-2 gap-4">
-            <div className="w-full max-w-xs md:max-w-md  md:h-[150px] flex flex-col justify-center items-center gap-2 border border-gray-200 text-white px-4 py-4 rounded-2xl shadow-md text-center">
-              <p className="text-xl md:text-3xl font-bold text-gray-700 text-center">30%</p>
-              <p className="text-xs md:text-sm text-gray-500 text-center">
-                Clients book another<br />session within a year
-              </p>
-            </div>
-            {/* <div className="bg-gray-100 rounded-xl aspect-square p-4 flex justify-center items-center shadow-md">
-              
-            </div> */}
-          {/* </div>  */}
           <div className="grid grid-cols-1 gap-4">
             <div className="w-full h-auto flex flex-col justify-center items-center gap-2 border border-gray-200 bg-white px-4 py-6 rounded-2xl shadow-md text-center">
               <p className="text-xl md:text-3xl font-bold text-gray-700 text-center">

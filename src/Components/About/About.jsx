@@ -4,8 +4,6 @@ import profile from "../../assets/profile.webp";
 import hockey from "../../assets/hockey.webp";
 import { useState } from "react";
 
-
-
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
@@ -16,7 +14,7 @@ export default function About() {
   return (
     <>
       <div
-      id="ABOUT"
+        id="ABOUT"
         className="bg-white text-black px-6 py-20 md:px-20"
         style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
       >
@@ -24,14 +22,14 @@ export default function About() {
           {/* Heading Section */}
           <div className="mb-12 text-gray-700">
             <div className="text-right">
-              <span className="text-6xl font-medium">
+              <span className="text-[50px] font-medium">
                 ‘‘ I don’t just take photos
               </span>
             </div>
 
             {/* الجملة الثانية يسار */}
             <div className="text-left mt-4">
-              <h1 className="text-4xl md:text-6xl font-medium leading-tight">
+              <h1 className="text-[50px] font-medium leading-tight">
                 I capture the raw emotions, the subtle moments, and the untold
                 stories that make life so beautiful.
               </h1>
@@ -43,7 +41,7 @@ export default function About() {
             {/* Left side: Texts */}
             <div className="flex-1 space-y-6">
               {/* Subtext */}
-              <div className="text-gray-600 text-xl font-bold">
+              <div className="text-gray-600 text-[18px] font-bold">
                 Whether you're celebrating love,
                 <br />
                 family, or personal milestones,
@@ -102,13 +100,10 @@ export default function About() {
                 </div>
               </div>
               <div className="mt-44">
-                <a href="#PORTOFOLIO"
-                  className="text-3xl underline"
-                >
+                <a href="#PORTOFOLIO" className="text-3xl underline">
                   {" "}
                   Check out my work ↗
                 </a>
-
               </div>
             </div>
           </div>

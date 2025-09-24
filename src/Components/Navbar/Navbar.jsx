@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Left - الاسم واللوجو */}
         <div className="flex items-center space-x-4">
           <div className="border-t border-l border-white opacity-100 mb-8 w-5 h-5"></div>
-          <div className="text-2xl md:text-3xl font-bold tracking-wide">
+          <div className="text-[18px]  font-semibold tracking-wide">
             Ismail Bakass
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Center Info (Desktop only) */}
         <div className="hidden md:flex w-full max-w-3xl justify-around items-center">
           {/* Photographer */}
-          <div className="text-md text-gray-300">
+          <div className="text-[14px] font-semibold text-gray-300">
             Photographer
             <br />
             (based in Eindhoven)
@@ -33,7 +33,7 @@ export default function Navbar() {
 
           {/* Email & phone */}
           <div className="flex flex-col items-center text-center">
-            <a className="text-md hover:text-gray-300" href="tel:+31684399384">
+            <a className="text-[14px] hover:text-gray-300" href="tel:+31684399384">
               0031684399384
             </a>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
               href="https://www.instagram.com/livwsi?igsh=bHlud3duamVvcnVk"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-md hover:text-gray-300"
+              className="text-[14px] hover:text-gray-300"
             >
               Instagram ↗
             </a>
@@ -107,25 +107,25 @@ export default function Navbar() {
               <div className="flex flex-col items-center space-y-8 mt-12">
                 <a
                   href="#Home"
-                  className="text-2xl hover:text-gray-300 block md:hidden"
+                  className="text-[14px] hover:text-gray-300 block md:hidden"
                 >
                   Home
                 </a>
                 <a
                   href="#ABOUT"
-                  className="text-2xl hover:text-gray-300 block md:hidden"
+                  className="text-[14px] hover:text-gray-300 block md:hidden"
                 >
                   About
                 </a>
                 <a
                   href="#WORK"
-                  className="text-2xl hover:text-gray-300 block md:hidden"
+                  className="text-[14px] hover:text-gray-300 block md:hidden"
                 >
                   Work
                 </a>
                 <a
                   href="PORTOFOLIO"
-                  className="text-2xl hover:text-gray-300  md:hidden"
+                  className="text-[14px] hover:text-gray-300  md:hidden"
                 >
                   Portofolio
                 </a>

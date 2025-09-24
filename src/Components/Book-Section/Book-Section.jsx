@@ -22,7 +22,7 @@ export default function BookSection() {
       <div className="relative z-10 flex flex-col justify-between w-full max-w-6xl">
         {/* Title */}
         <div>
-          <p className="text-3xl text-gray-300 sm:text-4xl md:text-5xl font-bold text-left leading-snug">
+          <p className="text-[56px] text-gray-300  font-bold text-left leading-snug">
             Capturing moments
             <br />
             that tell your story
@@ -35,7 +35,7 @@ export default function BookSection() {
 
         {/* Description - shifted right on md+ screens (like 'L' shape) */}
         <div className="mt-10 md:ml-48">
-          <p className="text-lg sm:text-xl text-gray-300 md:text-2xl font-bold text-left leading-relaxed">
+          <p className="text-[18px] text-gray-300  font-bold text-left leading-relaxed">
             My goal is to capture the real, raw
             <br />
             emotions behind every image, turning

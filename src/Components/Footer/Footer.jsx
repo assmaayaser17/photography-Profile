@@ -12,10 +12,10 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col md:flex-row gap-20 items-center md:items-start px-6 py-12 space-y-10 md:space-y-0">
         {/* Left Column */}
         <div className="text-center md:text-left md:w-1/3 space-y-2">
-          <p className="text-xl text-gray-300">
+          <p className="text-[15px] text-gray-300">
             Ready to capture the moments that matter most?
           </p>
-          <h3 className="text-2xl font-bold">
+          <h3 className="text-[22px] font-bold">
             Let’s make it happen. <br />
             Contact me today!
           </h3>
@@ -26,11 +26,11 @@ const Footer = () => {
           <h4 className="text-xl uppercase tracking-widest text-gray-400">
             Let’s Talk
           </h4>
-          <p className="text-lg font-semibold">0031684399384</p>
-          <p className="text-xl font-bold underline underline-offset-4">
+          <p className="text-[18px] font-semibold">0031684399384</p>
+          <p className="text-[32px] font-bold underline underline-offset-4">
             ismailbakass9@gmail.com
           </p>
-          <p className="text-sm text-gray-300">
+          <p className="text-[18px] text-gray-300">
             Photographer
             <br />
             (based in Eindhoven)
@@ -41,45 +41,28 @@ const Footer = () => {
         <div className="text-center md:text-left md:w-1/3 space-y-2">
           <ul className="space-y-1 text-lg font-medium">
             <li>
-              <a href="#home" className="hover:underline">
+              <a href="#Home" className="hover:underline text-[30px]">
                 Home
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="hover:underline">
+              <a href="#PORTOFOLIO" className="hover:underline text-[30px]">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#blog" className="hover:underline">
-                Blog
+              <a href="#WORK" className="hover:underline text-[30px]">
+                Work
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:underline">
+              <a href="ABOUT" className="hover:underline text-[30px]">
                 About Me
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:underline">
-                Contact
               </a>
             </li>
           </ul>
 
-          {/* Social icons */}
-          <div className="mt-4 text-sm text-gray-400 space-x-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram ↗
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-              X.com ↗
-            </a>
-          </div>
+         
         </div>
 
         {/* الاسم الكبير تحت الشمال */}

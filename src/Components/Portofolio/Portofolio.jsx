@@ -91,9 +91,11 @@ const Portofolio = () => {
   ];
 
   return (
-    <section id="PORTOFOLIO" className="bg-gray-200 py-16 min-h-screen">
+    <section id="PORTOFOLIO" className="bg-gray-200 py-16 min-h-screen"
+     style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
+    >
       <div className="container mx-auto px-6 max-w-7xl">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-12">
+        <h2 className="text-[56px] font-bold tracking-tight text-gray-900 mb-12">
           See the magic for yourself
         </h2>
 
@@ -135,7 +137,7 @@ const Portofolio = () => {
               </button>
 
               {/* Sticky First Image */}
-              <div className="sticky top-0 w-full h-[300px] shadow-lg overflow-hidden bg-cover mb-12 z-20">
+              <div className="sticky top-0 w-full h-full shadow-lg overflow-hidden bg-cover mb-12 z-20">
                 <img
                   src={items[selectedGallery].gallery[0]}
                   alt="Main Background"

@@ -42,10 +42,10 @@ export default function QuestionsSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-2xl font-semibold">
+              <p className="text-[18px] font-semibold">
                 Ismail Bakass
                 <br />
-                <span className="text-base text-gray-300 font-medium">
+                <span className="text-[15px] text-gray-300 font-medium">
                   Professional Photographer
                 </span>
               </p>
@@ -53,10 +53,10 @@ export default function QuestionsSection() {
 
             {/* Message */}
             <div className="text-sm md:text-base text-gray-200 leading-relaxed">
-              <p className="mb-3 font-medium text-2xl">
+              <p className="mb-3 font-medium text-[22px]">
                 Didn’t find your answer?
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-[18px]">
                 No worries! If you have any other questions or need more
                 information, feel free to reach out directly. I’m always happy
                 to help and make sure you feel confident before booking your
@@ -68,10 +68,8 @@ export default function QuestionsSection() {
           {/* Right Column - Accordion */}
           <div className="md:w-2/3 w-full space-y-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                Have Questions?
-              </h2>
-              <p className="text-lg md:text-xl font-light">
+              <h2 className="text-[56px] font-bold mb-4">Have Questions?</h2>
+              <p className="text-[18px] font-light">
                 We’re here to help. Find answers to common questions or reach
                 out for more details.
               </p>
@@ -79,10 +77,10 @@ export default function QuestionsSection() {
 
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-2xl font-bold">
+                <AccordionTrigger className="text-xl font-bold">
                   How far in advance should I book?
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-gray-200 font-medium">
+                <AccordionContent className="text-[18px] text-gray-200 font-medium">
                   To ensure availability, it’s ideal to book 3-6 months in
                   advance, especially during peak seasons like weddings or
                   holiday events. However, if your date is flexible, feel free
@@ -92,10 +90,10 @@ export default function QuestionsSection() {
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-2xl font-bold">
+                <AccordionTrigger className="text-xl font-bold">
                   What’s your turnaround time?
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-gray-200 font-medium">
+                <AccordionContent className="text-[18px] text-gray-200 font-medium">
                   My typical turnaround time for delivering photos is 4-6 weeks.
                   I carefully edit each image to bring out the best in every
                   shot, which takes time, but I promise it’s worth the wait.
@@ -103,10 +101,10 @@ export default function QuestionsSection() {
               </AccordionItem>
 
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-2xl font-bold">
+                <AccordionTrigger className="text-xl font-bold">
                   How long will it take to receive my photos?
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-gray-200 font-medium">
+                <AccordionContent className="text-[18px] text-gray-200 font-medium">
                   I usually send a sneak peek of select photos within 1-2 weeks
                   after the event so you can relive some of the moments right
                   away. The complete gallery will be delivered within 4-6 weeks,
@@ -115,10 +113,10 @@ export default function QuestionsSection() {
               </AccordionItem>
 
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-2xl font-bold">
+                <AccordionTrigger className="text-xl font-bold">
                   How much does it cost?
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-gray-200 font-medium">
+                <AccordionContent className="text-[18px] text-gray-200 font-medium">
                   My pricing depends on the type of event, the length of
                   coverage, and any special requests you may have. I offer a
                   range of packages to suit different budgets, so feel free to
@@ -128,10 +126,10 @@ export default function QuestionsSection() {
               </AccordionItem>
 
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-2xl font-bold">
+                <AccordionTrigger className="text-xl font-bold">
                   How many photos do I get?
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-gray-200 font-medium">
+                <AccordionContent className="text-[18px] text-gray-200 font-medium">
                   I typically deliver between 50-100 fully edited photos for a
                   standard session, but every package is customizable.
                 </AccordionContent>

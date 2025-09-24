@@ -136,8 +136,8 @@ export default function Work({
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-32 gap-y-12">
           <div className="text-white flex flex-col gap-8 max-w-lg">
-            <h2 className="text-6xl  font-medium mb-4">What I can offer</h2>
-            <p className="text-xl font-medium leading-relaxed animate-gradient">
+            <h2 className="text-[50px]  font-medium mb-4">What I can offer</h2>
+            <p className="text-[18px] font-medium leading-relaxed animate-gradient">
               I provide a range of photography services, capturing moments that
               matter most to you. From intimate portraits and candid events to
               cinematic wedding coverage — every story is treated with care and
