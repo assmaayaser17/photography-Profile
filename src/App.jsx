@@ -12,6 +12,7 @@ import QuestionsSection from './Components/Questions/Questions'
 import ChooseMe from './Components/Choose-me-section/Choose-me-section'
 import ClientsSection from './Components/Clients-Section/Clients-Section'
 import Footer from './Components/Footer/Footer'
+import Contact from './Components/Contact/Contact'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
    <Portofolio />
    <BookSection />
    <QuestionsSection />
+   <Contact/>
    <Footer />
   
     </>

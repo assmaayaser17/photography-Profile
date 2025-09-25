@@ -1,6 +1,5 @@
 import { useState } from "react";
 import book from "../../assets/book.webp";
-import BookSessionDialog from "../Book-Dialog";
 import { ArrowUpRight } from "lucide-react";
 
 export default function BookSection() {
@@ -65,7 +64,7 @@ export default function BookSection() {
       </div>
 
       {/* Dialog */}
-      <BookSessionDialog open={open} setOpen={setOpen} />
+    
     </section>
   );
 }
