@@ -54,8 +54,9 @@ export default function BookSection() {
         {/* Button + Arrow */}
         <div className="mt-10 md:ml-auto md:pr-6 flex items-center gap-3 underline w-fit">
           <a
+          href="#CONTACT"
             className="text-xl sm:text-2xl md:text-3xl font-bold cursor-pointer"
-            onClick={() => setOpen(true)}
+           
           >
             Book Session
           </a>

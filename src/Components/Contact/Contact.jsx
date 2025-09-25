@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-white bg-white px-4 py-20">
+    <section id="CONTACT" className="flex flex-col justify-center items-center text-white bg-white px-4 py-20">
       {/* العنوان */}
       <h2 className="text-4xl text-black md:text-5xl font-bold mb-6 text-center">
         Contact
