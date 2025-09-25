@@ -78,7 +78,6 @@ export default function ChooseMe() {
             src={hockey2}
             alt="side-1"
             className="object-cover rounded-2xl shadow-sm w-full h-52 md:h-72"
-            
           />
 
           <img

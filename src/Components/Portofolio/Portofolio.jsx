@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
 import portofolio1 from "../../assets/portofolio1.webp";
 import portofolio2 from "../../assets/portofolio2.webp";
 import hockey from "../../assets/hockey.webp";
@@ -40,7 +39,6 @@ import event32 from "../../assets/event32.webp";
 import event33 from "../../assets/event33.webp";
 import event34 from "../../assets/event34.webp";
 
-
 const AnimatedImage = ({ src, alt, delay }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -71,28 +69,71 @@ const Portofolio = () => {
     {
       title: "Hockey",
       img: hockey,
-      gallery: [hockey, hockey2, hockey3, hockey4, hockey5, hockey6, hockey7, hockey8, hockey9],
+      gallery: [
+        hockey,
+        hockey2,
+        hockey3,
+        hockey4,
+        hockey5,
+        hockey6,
+        hockey7,
+        hockey8,
+        hockey9,
+      ],
     },
     {
       title: "Gala",
       img: portofolio1,
-      gallery: [portofolio1, gallary1, gallary2, gallary3, gallary4, gallary5, gallary6, gallary7, gallary8, gallary9],
+      gallery: [
+        portofolio1,
+        gallary1,
+        gallary2,
+        gallary3,
+        gallary4,
+        gallary5,
+        gallary6,
+        gallary7,
+        gallary8,
+        gallary9,
+      ],
     },
     {
       title: "Event",
       img: portofolio2,
-      gallery: [portofolio2, event29, event30, event31, event32, event33, event34],
+      gallery: [
+        portofolio2,
+        event29,
+        event30,
+        event31,
+        event32,
+        event33,
+        event34,
+      ],
     },
     {
       title: "Event",
       img: event8,
-      gallery: [event8, event10, event11, event12, event13, event14, event15, event16, event17, event18, event19],
+      gallery: [
+        event8,
+        event10,
+        event11,
+        event12,
+        event13,
+        event14,
+        event15,
+        event16,
+        event17,
+        event18,
+        event19,
+      ],
     },
   ];
 
   return (
-    <section id="PORTOFOLIO" className="bg-gray-200 py-16 min-h-screen"
-     style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
+    <section
+      id="PORTOFOLIO"
+      className="bg-gray-200 py-16 min-h-screen"
+      style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
     >
       <div className="container mx-auto px-6 max-w-7xl">
         <h2 className="text-[56px] font-bold tracking-tight text-gray-900 mb-12">
@@ -131,13 +172,13 @@ const Portofolio = () => {
               <button
                 onClick={() => setSelectedGallery(null)}
                 aria-label="Close gallery"
-                className="fixed top-6 right-6 text-gray-700 hover:text-gray-900 text-4xl font-bold z-[60]"
+                className="fixed top-6 text-gray-700 hover:text-gray-900 text-4xl font-bold z-[60]"
               >
                 &times;
               </button>
 
               {/* Sticky First Image */}
-              <div className="sticky top-0 w-full h-full shadow-lg overflow-hidden bg-cover mb-12 z-20">
+              <div className="sticky top-0 w-full  h-[50vh] shadow-lg overflow-hidden bg-cover mb-12 z-20">
                 <img
                   src={items[selectedGallery].gallery[0]}
                   alt="Main Background"

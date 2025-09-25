@@ -33,7 +33,10 @@ export default function Navbar() {
 
           {/* Email & phone */}
           <div className="flex flex-col items-center text-center">
-            <a className="text-[14px] hover:text-gray-300" href="tel:+31684399384">
+            <a
+              className="text-[14px] hover:text-gray-300"
+              href="tel:+31684399384"
+            >
               0031684399384
             </a>
 
@@ -79,12 +82,11 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="fixed inset-0 bg-black/95 text-white flex flex-col items-center z-50 overflow-y-auto py-12 px-6"
           >
-            {/* Close Button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-6"
+              className="absolute  z-50 p-3 text-white text-xl rounded-full"
             >
-              <X size={32} />
+              X
             </button>
 
             <div className="grid grid-cols-2 gap-4 mt-12">
@@ -124,15 +126,15 @@ export default function Navbar() {
                   Work
                 </a>
                 <a
-                  href="PORTOFOLIO"
-                  className="text-[14px] hover:text-gray-300  md:hidden"
+                  href="#PORTOFOLIO"
+                  className="text-[14px] hover:text-gray-300 block md:hidden"
                 >
-                  Portofolio
+                  Portfolio
                 </a>
               </div>
             </div>
 
-            {/* Photographer name at bottom-right (Desktop only) */}
+            {/* Photographer name at bottom-left (Desktop only) */}
             <div className="hidden md:block absolute bottom-20 left-6 text-6xl font-medium text-white">
               Ismail Bakass — Photographer
             </div>

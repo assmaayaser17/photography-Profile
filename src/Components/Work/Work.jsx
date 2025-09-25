@@ -122,8 +122,120 @@ export default function Work({
 
   return (
     
-    <section id="WORK" className="relative w-full min-h-[70vh] lg:min-h-[80vh] overflow-hidden"
-     style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
+    // <section id="WORK" className="relative w-full min-h-[70vh] lg:min-h-[80vh] overflow-hidden"
+    //  style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
+    // >
+    //   <div
+    //     className="absolute inset-0 bg-cover bg-center"
+    //     style={{ backgroundImage: `url(${backgroundImage})` }}
+    //     aria-hidden
+    //   />
+
+    //   <div className="absolute inset-0 bg-black/80" />
+
+    //   <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-24">
+    //     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-32 gap-y-12">
+    //       <div className="text-white flex flex-col gap-8 max-w-lg">
+    //         <h2 className="text-[50px]  font-medium mb-4">What I can offer</h2>
+    //         <p className="text-[18px] font-medium leading-relaxed animate-gradient">
+    //           I provide a range of photography services, capturing moments that
+    //           matter most to you. From intimate portraits and candid events to
+    //           cinematic wedding coverage — every story is treated with care and
+    //           a creative eye.
+    //         </p>
+    //       </div>
+
+    //       {/* Right: 4 big category boxes */}
+    //       <div className="grid grid-cols-2 gap-4">
+    //         {categories.map((cat) => (
+    //           <motion.button
+    //             key={cat.id}
+    //             onClick={() => setOpenCategory(cat)}
+    //             whileHover={{ scale: 1.02 }}
+    //             whileTap={{ scale: 0.98 }}
+    //             className="relative group bg-white/10 rounded-xl overflow-hidden h-40 sm:h-48 lg:h-56 shadow-lg"
+    //           >
+    //             <img
+    //               src={cat.images[0]}
+    //               alt={cat.title}
+    //               className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-80 transition"
+    //             />
+    //             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition" />
+    //             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+    //               <h3 className="text-xl font-semibold mb-2">{cat.title}</h3>
+    //               <p className="text-sm text-white/80">
+    //                 {cat.images.length} photos
+    //               </p>
+    //             </div>
+    //           </motion.button>
+    //         ))}
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <AnimatePresence>
+    //     {openCategory && (
+    //       <motion.div
+    //         className="fixed inset-0 z-50 flex items-center justify-center p-6"
+    //         initial={{ opacity: 0 }}
+    //         animate={{ opacity: 1 }}
+    //         exit={{ opacity: 0 }}
+    //       >
+    //         <motion.div
+    //           className="absolute inset-0 bg-black/70"
+    //           onClick={() => setOpenCategory(null)}
+    //           initial={{ opacity: 0 }}
+    //           animate={{ opacity: 1 }}
+    //           exit={{ opacity: 0 }}
+    //         />
+
+    //         <motion.div
+    //           className="relative z-10 w-full max-w-6xl max-h-[90vh] overflow-y-auto  bg-white rounded-2xl shadow-2xl p-6"
+    //           initial={{ y: 30, opacity: 0, scale: 0.98 }}
+    //           animate={{ y: 0, opacity: 1, scale: 1 }}
+    //           exit={{ y: 30, opacity: 0, scale: 0.98 }}
+    //         >
+    //           <div className="flex items-center justify-between mb-4">
+    //             <h3 className="text-xl font-semibold">{openCategory.title}</h3>
+    //             <div className="flex items-center gap-3">
+    //               <button
+    //                 onClick={() => setOpenCategory(null)}
+    //                 className="text-sm text-gray-600 px-3 py-1 rounded hover:bg-gray-100"
+    //               >
+    //                 Close
+    //               </button>
+    //             </div>
+    //           </div>
+
+    //           <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    //             {openCategory.images.map((src, i) => (
+    //               <motion.div
+    //                 key={src + i}
+    //                 className="rounded-lg overflow-hidden"
+    //                 whileHover={
+    //                   openCategory.id === "Sports"
+    //                     ? { scale: 1.05, rotate: 2 }
+    //                     : { scale: 1.02 }
+    //                 }
+    //                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    //               >
+    //                 <img
+    //                   src={src}
+    //                   alt={`${openCategory.title} ${i + 1}`}
+    //                   className="w-full h-auto max-h-[80vh] object-contain "
+    //                 />
+    //               </motion.div>
+    //             ))}
+    //           </motion.div>
+    //         </motion.div>
+    //       </motion.div>
+    //     )}
+    //   </AnimatePresence>
+    // </section>
+        <section
+      id="WORK"
+      className="relative w-full min-h-[70vh] lg:min-h-[80vh] overflow-hidden"
+      style={{ fontFamily: `'Inter', 'Inter Placeholder', sans-serif` }}
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -163,20 +275,18 @@ export default function Work({
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
                   <h3 className="text-xl font-semibold mb-2">{cat.title}</h3>
-                  <p className="text-sm text-white/80">
-                    {cat.images.length} photos
-                  </p>
+                  <p className="text-sm text-white/80">{cat.images.length} photos</p>
                 </div>
               </motion.button>
             ))}
           </div>
         </div>
       </div>
-
+{/* 
       <AnimatePresence>
         {openCategory && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-6"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-2 overflow-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -190,7 +300,7 @@ export default function Work({
             />
 
             <motion.div
-              className="relative z-10 w-full max-w-6xl max-h-[90vh] overflow-y-auto  bg-white rounded-2xl shadow-2xl p-6"
+              className="relative z-10 w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl p-6 sm:max-w-full sm:mx-2 sm:max-h-[80vh]"
               initial={{ y: 30, opacity: 0, scale: 0.98 }}
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 30, opacity: 0, scale: 0.98 }}
@@ -222,7 +332,7 @@ export default function Work({
                     <img
                       src={src}
                       alt={`${openCategory.title} ${i + 1}`}
-                      className="w-full h-auto max-h-[80vh] object-contain "
+                      className="w-full h-auto max-h-[60vh] object-contain sm:max-h-[40vh]"
                     />
                   </motion.div>
                 ))}
@@ -230,7 +340,68 @@ export default function Work({
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
+
+      <AnimatePresence>
+  {openCategory && (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 overflow-auto"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <motion.div
+        className="absolute inset-0 bg-black/70"
+        onClick={() => setOpenCategory(null)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      />
+
+      <motion.div
+        className="relative z-10 w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl p-6 sm:max-w-full sm:mx-2 sm:max-h-[80vh]"
+        style={{ WebkitOverflowScrolling: "touch" }}
+        initial={{ y: 30, opacity: 0, scale: 0.98 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        exit={{ y: 30, opacity: 0, scale: 0.98 }}
+      >
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xl font-semibold">{openCategory.title}</h3>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setOpenCategory(null)}
+              className="text-sm text-gray-600 px-3 py-1 rounded hover:bg-gray-100"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+
+        <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {openCategory.images.map((src, i) => (
+            <motion.div
+              key={src + i}
+              className="rounded-lg overflow-hidden"
+              whileHover={
+                openCategory.id === "Sports"
+                  ? { scale: 1.05, rotate: 2 }
+                  : { scale: 1.02 }
+              }
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <img
+                src={src}
+                alt={`${openCategory.title} ${i + 1}`}
+                className="w-full h-auto max-h-[50vh] sm:max-h-[40vh] object-contain"
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </section>
  
     
